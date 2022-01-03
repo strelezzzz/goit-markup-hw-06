@@ -322,7 +322,7 @@ a.active-page {
 /* ======= Footer =============================== */
 .footer .container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .logo-footer {
@@ -730,18 +730,53 @@ a.active-page {
 }
 /* ========== Forms ======= */
 
-.email-input {
-  display: flex;
-  flex-direction: column;
-}
-
-form {
-  margin-left: 93px;
-  display: flex;
-}
-
 .email-label {
   color: var(--background);
   margin-bottom: 20px;
   font-size: 14px;
 }
+
+.email-icon {
+  fill: var(--background);
+}
+
+.email-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 200px;
+  min-height: 50px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--background);
+  background-color: var(--color-active);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.email-button > span {
+  margin-right: 10px;
+}
+
+.email-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.form {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 93px;
+}
+/* .footer .container {
+  display: flex;
+  align-items: baseline;
+} */
