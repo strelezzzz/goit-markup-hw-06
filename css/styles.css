@@ -376,6 +376,7 @@ a.active-page {
 }
 
 .social h3 {
+  font-size: 14px;
   margin-bottom: 18px;
   color: var(--background);
 }
@@ -481,7 +482,8 @@ a.active-page {
 }
 
 .about h3,
-.social h3 {
+.social h3,
+.email-label {
   display: block;
   font-weight: bold;
   line-height: 1.14;
@@ -725,4 +727,21 @@ a.active-page {
 .icon-close {
   display: block;
   fill: var(--color-logo);
+}
+/* ========== Forms ======= */
+
+.email-input {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  margin-left: 93px;
+  display: flex;
+}
+
+.email-label {
+  color: var(--background);
+  margin-bottom: 20px;
+  font-size: 14px;
 }

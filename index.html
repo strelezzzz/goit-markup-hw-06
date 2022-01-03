@@ -340,10 +340,12 @@
         </section>
 
     </main>
-    <!-- Подвал -->
+    <!-- ----------------Footer----------------------- -->
     <footer class="footer">
         <div class="container">
-            <div class="address"><a class="logo-footer" href="index.html">
+            <!-- Contacts block -->
+            <div class="address">
+                <a class="logo-footer" href="index.html">
                     <span class="logo-first">Web</span>
                     <span class="logo-second">Studio</span>
                 </a>
@@ -361,7 +363,7 @@
                     </ul>
                 </address>
             </div>
-            <!-- Иконки -->
+            <!-- Social icons -->
             <div class="social">
                 <h3>присоединяйтесь</h3>
                 <ul class="social-links">
@@ -395,8 +397,21 @@
                     </li>
                 </ul>
             </div>
+            <!-- Form block -->
+            
+                <form name="e-mail" autocomplete ="off">
+                    <label class="email-input">
+                        <span class="email-label">
+                            Подпишитесь на рассылку
+                        </span>
+                        <input type="email" name="email" placeholder="E-mail">
+                    </label>
+                    <button type="submit">Подписаться</button>
+                </form>
+            
         </div>
     </footer>
+    <!-- ----------Modal---------- -->
     <div class="backdrop is-hidden " data-modal>
         <div class="modal">
              <button data-modal-close type ="button" class="close-button" >
