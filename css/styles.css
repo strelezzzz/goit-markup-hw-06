@@ -469,7 +469,9 @@ a.active-page {
 }
 
 .hero .buttons:hover,
-.hero .buttons:focus {
+.hero .buttons:focus,
+.email-button:hover,
+.email-button:focus {
   background-color: var(--hero-active-button);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -747,6 +749,8 @@ a.active-page {
   text-align: center;
   min-width: 200px;
   min-height: 50px;
+  padding: 0;
+  border: none;
 
   font-weight: bold;
   font-size: 16px;
