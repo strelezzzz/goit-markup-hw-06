@@ -779,28 +779,51 @@ a.active-page {
   margin-bottom: 20px;
 }
 
-.comment {
-  resize: none;
-  padding: 12px 16px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.icon-form {
+.icon-form,
+.icon-check {
   position: absolute;
   top: 50%;
   left: 12px;
   fill: var(--main-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-check {
+  top: 20%;
+}
+
+.form-fild:focus-within .icon-form {
+  fill: var(--color-active);
+}
+
+.comment-input,
+.modal-input {
+  display: block;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 16px;
+  padding-left: 16px;
+  box-sizing: border-box;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input {
-  display: block;
-  padding: 0;
+  padding-left: 42px;
   height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
+}
+
+.comment-input {
+  resize: none;
+}
+
+.modal-input:focus,
+.comment-input:focus {
+  outline-color: var(--color-active);
+  border: 1px solid var(--color-active);
 }
 
 .policy-label {
@@ -831,6 +854,7 @@ a.active-page {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /* ========== Forms ======= */
 
 .email-label {
