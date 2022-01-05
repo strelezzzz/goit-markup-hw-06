@@ -444,6 +444,7 @@
                     <label for ="label-comment" class="form-label" >Комментарий</label>
                     <textarea class ="comment-input" rows ="7" name ="comment" id ="comment" placeholder="Введите текст"></textarea>
                 </div>
+                <!--  -------    Policy-field    ----------------------- -->
                 <div class="policy-fild">
                     <input 
                     class="policy-custom policy-hidden" 
@@ -455,10 +456,13 @@
                         Соглашаюсь с рассылкой и принимаю
                         <a class="policy-link" href="#">Условия договора</a>
                     </label>
-                    <svg class="icon-check" width="16" height="15">
-                        <use href="images/icons.svg#icon-Vector"></use>
-                    </svg>
+                    <span class="checkbox-policy">
+                        <svg class="icon-close" width="11" height="11">
+                            <use href="images/icons.svg#icon-check"></use>
+                        </svg>
+                    </span>
                 </div>
+                <!-- -----------  END of Policy-field ----------------------- -->
                 <button type="submit" class="modal-button">Отправить</button>
             </div>
             <button data-modal-close type ="button" class="close-button" >
