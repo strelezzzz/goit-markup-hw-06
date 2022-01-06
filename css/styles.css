@@ -358,6 +358,7 @@ a.active-page {
 
 .address-list {
   padding-bottom: 60px;
+  width: 231px;
 }
 
 .address-list .item + .item {
@@ -696,8 +697,8 @@ a.active-page {
   position: fixed;
   top: 50%;
   left: 50%;
-  min-width: 528px;
-  min-height: 581px;
+  width: 528px;
+  height: 581px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -740,6 +741,7 @@ a.active-page {
   margin-top: 40px;
   margin-right: 40px;
   margin-left: 40px;
+  margin-bottom: 40px;
 }
 
 .form-title {
@@ -798,8 +800,11 @@ a.active-page {
 .modal-input {
   display: block;
 
-  padding-top: 12px;
-  padding-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.14;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-right: 16px;
   padding-left: 16px;
   box-sizing: border-box;
@@ -812,7 +817,7 @@ a.active-page {
 
 .modal-input {
   padding-left: 42px;
-  height: 40px;
+  max-height: 40px;
 }
 
 .comment-input {
@@ -841,7 +846,6 @@ a.active-page {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 40px;
 }
 
 .checkbox-policy {
@@ -926,6 +930,13 @@ a.active-page {
   padding-left: 16px;
   font-size: 16px;
   line-height: 1.25;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.email-input:focus {
+  outline: none;
 }
 
 .form {

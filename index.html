@@ -421,7 +421,7 @@
                 <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
                 <div class="form-fild">
                     <label for ="name"  class="form-label"  >Имя</label>
-                    <input class="modal-input" type ="text" id ="name" name ="name"autocomplete="off" >
+                    <input class="modal-input" type ="text" id ="name" name ="name" autocomplete="off" >
                     <svg class="icon-form" width="18" height="18" >
                         <use href="images/icons.svg#icon-modal-person" ></use>
                     </svg>
@@ -446,21 +446,20 @@
                 </div>
                 <!--  -------    Policy-field    ----------------------- -->
                 <div class="policy-fild">
-                    <input 
-                    class="policy-custom policy-hidden" 
-                    type ="checkbox" 
-                    name="policy" 
-                    id ="policy"
-                    />
-                    <label  class="policy-label" for="policy">
-                        Соглашаюсь с рассылкой и принимаю
-                        <a class="policy-link" href="#">Условия договора</a>
+                    <label class="policy-label">
+                        <input 
+                        class="policy-custom policy-hidden" 
+                        type ="checkbox" 
+                        name="policy" 
+                        id ="policy"
+                        />
+                        <span class="checkbox-policy">
+                            <svg class="icon-check" width="11" height="11">
+                                <use href="images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>Соглашаюсь с рассылкой и принимаю <a class="policy-link" href="#">Условия договора</a>
                     </label>
-                    <span class="checkbox-policy">
-                        <svg class="icon-check" width="11" height="11">
-                            <use href="images/icons.svg#icon-check"></use>
-                        </svg>
-                    </span>
+                                        
                 </div>
                 <!-- -----------  END of Policy-field ----------------------- -->
                 <button type="submit" class="modal-button">Отправить</button>
