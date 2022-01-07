@@ -714,7 +714,7 @@ a.active-page {
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.1);
+  transform: translate(-50%, -50%) scale(0.75);
 }
 
 .close-button {
