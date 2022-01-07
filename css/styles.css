@@ -704,7 +704,7 @@ a.active-page {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background-color: var(--background);
-  transform: translate(-50%, -50%) scale(1.1);
+  transform: translate(-50%, -50%);
 }
 
 .is-hidden {
@@ -803,8 +803,8 @@ a.active-page {
   font-size: 14px;
   line-height: 1.14;
 
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-right: 16px;
   padding-left: 16px;
   box-sizing: border-box;
@@ -822,6 +822,7 @@ a.active-page {
 
 .comment-input {
   resize: none;
+  height: 120px;
 }
 
 .modal-input:focus,
